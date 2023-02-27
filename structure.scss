@@ -1,0 +1,243 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html, body {
+ height: 100%
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+ margin-bottom: 16px
+}
+
+@font-face {
+    font-family: RubikBlack;
+    src: url(../fonts/Rubik-Black.ttf);
+}
+
+@font-face {
+    font-family: RubikBlackIt;
+    src: url(../fonts/Rubik-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikBold;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: RubikBoldIt;
+    src: url(../fonts/Rubik-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikExtraBold;
+    src: url(../fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: RubikExtraBoldItalic;
+    src: url(../fonts/Rubik-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikItalic;
+    src: url(../fonts/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: RubikLight;
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: RubikLightIt;
+    src: url(../fonts/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikMedium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: RubikMediumItalic;
+    src: url(../fonts/Rubik-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikReg;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: RubikSemiBo;
+    src: url(../fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: RubikSemiBoldIt;
+    src: url(../fonts/Rubik-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishBlack;
+    src: url(../fonts/Mulish-Black.ttf);
+}
+
+@font-face {
+    font-family: MulishBlackIt;
+    src: url(../fonts/Mulish-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishBold;
+    src: url(../fonts/Mulish-Bold.ttf);
+}
+
+@font-face {
+    font-family: MulishBoldIt;
+    src: url(../fonts/Mulish-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraBold;
+    src: url(../fonts/Mulish-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraBoldIt;
+    src: url(../fonts/Mulish-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraLight;
+    src: url(../fonts/Mulish-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraLightIt;
+    src: url(../fonts/Mulish-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishIt;
+    src: url(../fonts/Mulish-Italic.ttf);
+}
+
+@font-face {
+    font-family: MulishLi;
+    src: url(../fonts/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: MulishLightIt;
+    src: url(../fonts/Mulish-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishMedium;
+    src: url(../fonts/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: MulishMediumIt;
+    src: url(../fonts/Mulish-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishRegular;
+    src: url(../fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: MulishSemiBo;
+    src: url(../fonts/Mulish-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MulishSemiBoldIt;
+    src: url(../fonts/Mulish-SemiBoldItalic.ttf);
+}
+
+.home-body-section h2 {
+    color: #729DCF;
+    font-family: RubikReg;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.featured-post-title {
+    font-family: RubikBold;
+}
+
+.title-underline {
+    width: 11%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.featured-post {
+    margin-top: 44px;
+}
+
+.post {
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    text-align: left;
+}
+
+.title {
+    font-family: RubikBold;
+    color: #002C5F;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.post-paragraph {
+    font-family: RubikReg;
+    color: #939393;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.read-link p {
+    margin-bottom: 55px;
+    color: #002C5F;
+}
+
+.title-about-underline {
+    width: 8%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.about-paragraph {
+    margin-top: 44px;
+}
+
+.about-paragraph p {
+    font-family: RubikReg;
+    line-height: 55px;
+}
+
+.title-explore-underline {
+    width: 26%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
