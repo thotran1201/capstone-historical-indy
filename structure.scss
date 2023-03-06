@@ -189,6 +189,10 @@ p {
     margin-top: 44px;
 }
 
+.featured-post-two {
+    margin-top: 120px;
+}
+
 .post {
     width: 350px;
     height: 550px;
@@ -240,4 +244,23 @@ p {
     width: 26%;
     border-bottom: #002C5F 3px solid;
     margin: 0 auto;
+}
+
+.next-buttons-section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.back-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.next-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
 }
