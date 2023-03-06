@@ -286,6 +286,10 @@ input[type=text] {
     margin-top: 44px;
 }
 
+.featured-post-two {
+    margin-top: 120px;
+}
+
 .post-image img {
     width: 350px;
     height: 350px;
@@ -358,10 +362,66 @@ input[type=text] {
     padding: 0;
 }
 
+.hero-explore-two-section {
+    background-image: url("../images/ball-gardens.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-three-section {
+    background-image: url("../images/old_statehouse_pics_033_72dpi_3750P_sepia.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
 .title-explore-underline {
     width: 26%;
     border-bottom: #002C5F 3px solid;
     margin: 0 auto;
+}
+
+.next-buttons-section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.back-page-button {
+    background-color: #002C5F;
+    height: 70px;
+    width: 306px;
+    padding-top: 18px;
+    margin-top: 125px;
+}
+
+.back-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.next-page-button {
+    background-color: #002C5F;
+    height: 70px;
+    width: 306px;
+    margin-left: 975px;
+    padding-top: 18px;
+    margin-top: 125px;
+}
+
+.next-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
 }
 
 .copyright {
