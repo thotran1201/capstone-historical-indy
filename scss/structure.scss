@@ -220,12 +220,6 @@ p {
     justify-content: space-evenly;
 }
 
-.read-link p {
-    margin-bottom: 55px;
-    color: #002C5F;
-    text-decoration: none;
-}
-
 .title-about-underline {
     width: 8%;
     border-bottom: #002C5F 3px solid;
@@ -264,4 +258,18 @@ p {
     font-family: RubikReg;
     font-size: 27px;
     text-decoration: none;
+}
+
+.historical-location-paragraph {
+    margin-top: 90px;
+}
+
+.read-link p {
+    margin-bottom: 55px;
+    color: #002C5F;
+}
+
+.read-link p:hover {
+    color: gold;
+    cursor: pointer;
 }
