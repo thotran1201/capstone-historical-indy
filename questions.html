@@ -34,52 +34,28 @@
             <div class="title-underline">
             </div>
         </div>
-        <div class="enter-your-question-section">
-            <div class="enter-your-question-title">
-                <h1>Enter Your Question</h1>
+        <div class="questions-list-section" >
+            <div class="questions-list-title">
+                <h1>Question List</h1>
             </div>
-            <input type="text">
-        </div>
-
-        <div class="featured-post-two">
-            <div class="row">
-                <div class="post">
-                    <div class="post-image">
-                        <img src="images/benjamin-harrison-site/Image[13].jpeg" alt="">
-                    </div>
-                    <p class="title">Benjamin Harrison Presidential Site</p>
-                    <div class="post-paragraph">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-                        <div class="read-link">
-                            <p onclick="setup(7)">Read More</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="images/crown-hill-cemetery/IMG_1692.jpg" alt="">
-                    </div>
-                    <p class="title">Crown Hill Cemetery</p>
-                    <div class="post-paragraph">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-                        <div class="read-link">
-                            <p onclick="setup(3)">Read More</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="images/indianapolis-zoo/Image (6).jpeg" alt="">
-                    </div>
-                    <p class="title">The Indianapolis Zoo</p>
-                    <div class="post-paragraph">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-                        <div class="read-link">
-                            <p onclick="setup(14)">Read More</p>
-                        </div>
+            <div id="listquestions">
+                <div class="questionstemplate">
+                    <p>testquestions</p>
+                    <div class="templateimages">
+                        <img src="images/pencil.png" alt="">
+                        <img src="images/bin.png" alt="">
                     </div>
                 </div>
             </div>
+            <form onsubmit="return false">
+                <div class="enter-your-question-section">
+                    <div class="enter-your-question-title">
+                        <h1>Enter Your Question</h1>
+                    </div>
+                </div>
+                <input type="text" id="questioninput" name="questioninput" placeholder="question goes here"><br>
+                <input type="submit" id="submit-button" onclick="SubmitQuestion()">
+              </form>
         </div>
     </div>
 
@@ -91,5 +67,6 @@
 
     <script src="lib/jquery-3.6.3.min.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/questions.js"></script>
 </body>
 </html>

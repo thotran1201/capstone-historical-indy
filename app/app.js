@@ -1,48 +1,48 @@
-function testLocalStorage() {
-    if(localStorage.getItem('title') !== null) {
-        console.log(localStorage.getItem('title'));
-    }
-    else {
-        console.log("no title");
-    }
+// function testLocalStorage() {
+//     if(localStorage.getItem('title') !== null) {
+//         console.log(localStorage.getItem('title'));
+//     }
+//     else {
+//         console.log("no title");
+//     }
     
-    if(localStorage.getItem('description') !== null) {
-        console.log(localStorage.getItem('description'));
-    }
-    else {
-        console.log("no description");
-    }
+//     if(localStorage.getItem('description') !== null) {
+//         console.log(localStorage.getItem('description'));
+//     }
+//     else {
+//         console.log("no description");
+//     }
 
-    if(localStorage.getItem('imagesIndex') !== null) {
-        console.log(localStorage.getItem('imagesIndex'));
-    }
-    else {
-        console.log("no imagesIndex");
-    }
+//     if(localStorage.getItem('imagesIndex') !== null) {
+//         console.log(localStorage.getItem('imagesIndex'));
+//     }
+//     else {
+//         console.log("no imagesIndex");
+//     }
 
-    if(localStorage.getItem('sourceImg') !== null) {
-        console.log(localStorage.getItem('sourceImg'));
-    }
-    else {
-        console.log("no sourceImg");
-    }
+//     if(localStorage.getItem('sourceImg') !== null) {
+//         console.log(localStorage.getItem('sourceImg'));
+//     }
+//     else {
+//         console.log("no sourceImg");
+//     }
 
-    if(localStorage.getItem('lat') !== null) {
-        console.log(localStorage.getItem('lat'));
-    }
-    else {
-        console.log("no lat");
-    }
+//     if(localStorage.getItem('lat') !== null) {
+//         console.log(localStorage.getItem('lat'));
+//     }
+//     else {
+//         console.log("no lat");
+//     }
 
-    if(localStorage.getItem('lon') !== null) {
-        console.log(localStorage.getItem('lon'));
-    }
-    else {
-        console.log("no lon");
-    }
-}
+//     if(localStorage.getItem('lon') !== null) {
+//         console.log(localStorage.getItem('lon'));
+//     }
+//     else {
+//         console.log("no lon");
+//     }
+// }
 
-testLocalStorage();
+// testLocalStorage();
 
 let locations = [
     "Indiana_World_War_Memorial_Plaza", //0
@@ -66,7 +66,7 @@ let locations = [
     "Hotel_Washington_(Indianapolis,_Indiana)", //18
     "Indiana_Theatre_(Indianapolis)", //19
     "Mass_Ave_Cultural_Arts_District", //20
-    "Indy_Pride", //21
+    "Alfred_M._Glossbrenner_Mansion", //21
     "General_German_Protestant_Orphans_Home", //22
     "Old_Indianapolis_City_Hall", //23
     "Hanna–Ochler–Elder_House", //24
@@ -80,7 +80,7 @@ let locations = [
     "Indiana_State_Museum", //32
     "Indianapolis_City_Market", //33
     "Morris–Butler_House", //34
-    "Butler_University", //35
+    "Birch_Bayh_Federal_Building_and_United_States_Courthouse", //35
     "South_Side_Turnverein_Hall", //36
     "Indiana_Medical_History_Museum", //37
     "Omni_Severin_Hotel", //38
@@ -90,19 +90,32 @@ let locations = [
     "Indiana_Historical_Society", //42
     "Calvin_I._Fletcher_House", //43
     "Indiana_School_for_the_Deaf", //44
-    "Broad_Ripple_Park_Carousel", //45
-    "Hilbert_Circle_Theatre" //46
+    "Majestic_Building_(Indianapolis,_Indiana)", //45
+    "Hilbert_Circle_Theatre", //46
+    "Henry_F._Campbell_Mansion", //47
+    "Charles_Kuhn_House", //48
+    "Shortridge_High_School", //49
+    "St._John_the_Evangelist_Catholic_Church_(Indianapolis,_Indiana)", //50
+    "Allison_Mansion", //51
+    "Byram–Middleton_House", //52
+    "Riverside_Park_(Indianapolis)", //53
+    "Garfield_Park_(Indianapolis)", //54
+    "Golden_Hill_Historic_District_(Indianapolis,_Indiana)", //55
+    "Big_Run_Baptist_Church_and_Cemetery", //56
+    "Balmoral_Court", //57
+    "August_Sommer_House", //58
+    "Herron–Morton_Place_Historic_District", //59
+    "Old_Southport_High_School", //60
+    "Crows_Nest,_Indiana", //61
+    "Indiana_State_Federation_of_Colored_Women%27s_Clubs", //62
+    "Indianapolis_Athletic_Club", //63
+    "Roberts_Park_Methodist_Episcopal_Church" //64
+
 ]
 
 let xhr = new XMLHttpRequest();
 
-let searchURL = "https://en.wikipedia.org/w/api.php?action=opensearch&origin=*&format=json&search=";
-
-let contentURL = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&coordinates&exintro&explaintext&origin=*&format=json&titles=";
-
-let locationURL = "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&origin=*&format=json&titles=";
-
-let locationimageURL = "https://en.wikipedia.org/w/api.php?action=query&prop=pageimages&origin=*&format=json&&pithumbsize=1000&titles=";
+let contentURL = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts|pageimages|coordinates&exintro&explaintext&origin=*&format=json&pithumbsize=1000&titles=";
 
 let title = "";
 
@@ -116,33 +129,15 @@ let lon;
 
 function setup(locationIndex, imagesIndex) {
     let place = locations[locationIndex]
-    
-    setTimeout(function() { goWikiLoc(place); }, 5000);
-    setTimeout(function() { goWikiImg(place); }, 5000);
-    setTimeout(function() { goWikiDesc(place); }, 5000);
 
-    //goWikiLoc(place);
-    //goWikiImg(place); //image not updating here
-    //goWikiDesc(place);
+    goWiki(place);
     localStorage.setItem('imagesIndex', imagesIndex);
 }
 
-function goWikiDesc(locationname) {
+function goWiki(locationname) {
     let url = contentURL + locationname;
-    //console.log(url);
-    getJSON(url, 3);
-}
-
-function goWikiLoc(locationname) {
-    let url = locationURL + locationname;
-    //console.log(url);
-    getJSON(url, 2);
-}
-
-function goWikiImg(locationname) {
-    let url = locationimageURL + locationname;
     console.log(url);
-    getJSON(url, 1);
+    getJSON(url);
 }
 
 function getJSON(url, method) {
@@ -150,16 +145,9 @@ function getJSON(url, method) {
     xhr.onload = function() {
         if(xhr.status >= 200 && xhr.status < 400) {
             let data = JSON.parse(this.response);
-            console.log(data);
             
-            if(method === 1) {
-                getContentImg(data)
-            } else if(method === 2) {
-                getContentLoc(data)
-            } else {
-                getContentDesc(data); 
-                location.href = "historicalfacts.html";  
-            }
+            getContent(data); 
+            location.href = "historicalfacts.html";  
             
         }
         else {
@@ -171,32 +159,18 @@ function getJSON(url, method) {
     xhr.send();
 }
 
-function getContentDesc(data) {
-    //let pageID = Object.keys(data.query.pages)
+function getContent(data) {
     let page = data.query.pages;
     let pageID = Object.keys(data.query.pages);
     description = page[pageID].extract;
     title = page[pageID].title;
-    localStorage.setItem('title', title);
-    localStorage.setItem('description', description);
-    testLocalStorage();
-}
-
-function getContentLoc(data) {
-    let page = data.query.pages;
-    let pageID = Object.keys(data.query.pages);
+    sourceImg = page[pageID].thumbnail.source;
     lat = page[pageID].coordinates[0].lat;
     lon = page[pageID].coordinates[0].lon;
+    localStorage.setItem('title', title);
+    localStorage.setItem('description', description);
+    localStorage.setItem('sourceImg', sourceImg);
     localStorage.setItem('lat', lat);
     localStorage.setItem('lon', lon);
-    testLocalStorage();
-}
-
-function getContentImg(data) {
-    let page = data.query.pages;
-    let pageID = Object.keys(data.query.pages);
-    sourceImg = page[pageID].thumbnail.source;
-    localStorage.setItem('sourceImg', sourceImg);
-    testLocalStorage();
-    console.log(page, sourceImg);
+    // testLocalStorage();
 }

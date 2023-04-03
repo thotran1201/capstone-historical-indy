@@ -1,8 +1,6 @@
 let factstitle = "";
 let factsdescription = '';
 let imagesIndex = -1;
-let locLat;
-let locLon;
 let factSourceImg = "";
 
 function historicalfactsSetUp() {
@@ -30,22 +28,6 @@ function historicalfactsSetUp() {
     
     else {
         console.log("no images");
-    }
-    
-    if(localStorage.getItem('lat') !== null) {
-        locLat = localStorage.getItem('lat');
-    }
-    
-    else {
-        console.log("no lat");
-    }
-    
-    if(localStorage.getItem('lon') !== null) {
-        locLon = localStorage.getItem('lon');
-    }
-    
-    else {
-        console.log("no lon");
     }
     
     if(localStorage.getItem('sourceImg') !== null) {
@@ -76,13 +58,13 @@ historicalfactsSetUp();
 let foldername = [
     "benjamin-harrison-site", //0
     "benton-house", //1
-    "broad-ripple-park-carousel", //2
-    "butler-university", //3
+    "majestic-building", //2
+    "birch-bayh-federal-building-and-united-states-courthouse", //3
     "calvin-i-fletcher-house", //4
     "circle-downtown", //5
     "crispus-attucks-high-school", //6
     "crown-hill-cemetery", //7
-    "damien-center", //8
+    "glossbrenner-mansion", //8
     "eiteljorg-museum", //9
     "fort-benjamin-harrison", //10
     "general-german-protestant-orphans-home", //11
@@ -121,7 +103,25 @@ let foldername = [
     "the-childrens-museum", //44
     "union-station", //45
     "veterans-mall", //46
-    "walker-theatre" //47
+    "walker-theatre", //47
+    "henry-f-campbell-mansion", //48
+    "charles-kuhn-house", //49
+    "shortridge-high-school", //50
+    "st-john-the-evangelist-catholic-church", //51
+    "allison-mansion", //52
+    "byram-middleton-house", //53
+    "riverside-park", //54
+    "garfield-park", //55
+    "golden-hill-historic-district", //56
+    "big-run-baptist-church-and-cemetery", //57
+    "balmoral-court", //58
+    "august-sommer-house", //59
+    "herron-morton-place-historic-district", //60
+    "old-southport-high-school", //61
+    "crows-nest", //62
+    "indiana-womens-club", //63
+    "indianapolis-athletic-club", //64
+    "roberts-park-church" //65
 ]
 
 function loadImages(name) {
