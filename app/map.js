@@ -38,7 +38,7 @@ async function initMap() {
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+  // const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
 
   map = new Map(document.getElementById("map"), {
     zoom: 4,
@@ -46,11 +46,11 @@ async function initMap() {
     mapId: "DEMO_MAP_ID",
   });
 
-  const marker = new AdvancedMarkerView({
-    map: map,
-    position: position,
-    title: markertitle,
-  });
+  // const marker = new AdvancedMarkerView({
+  //   map: map,
+  //   position: position,
+  //   title: markertitle,
+  // });
 
 }
 

@@ -76,7 +76,7 @@ let locations = [
     "Crispus_Attucks_High_School", //28
     "Old_Northside_Historic_District", //29
     "Rivoli_Theater_(Indianapolis,_Indiana)", //30
-    "Nicholson–Rand_House", //31
+    "Indianapolis_Veterans_Administration_Hospital", //31
     "Indiana_State_Museum", //32
     "Indianapolis_City_Market", //33
     "Morris–Butler_House", //34
@@ -85,7 +85,7 @@ let locations = [
     "Indiana_Medical_History_Museum", //37
     "Omni_Severin_Hotel", //38
     "Slippery_Noodle_Inn", //39
-    "Hiram_A._Haverstick_Farmstead", //40
+    "Barnes_and_Thornburg_Building", //40
     "Schnull–Rauch_House", //41
     "Indiana_Historical_Society", //42
     "Calvin_I._Fletcher_House", //43
@@ -96,12 +96,12 @@ let locations = [
     "Charles_Kuhn_House", //48
     "Shortridge_High_School", //49
     "St._John_the_Evangelist_Catholic_Church_(Indianapolis,_Indiana)", //50
-    "Allison_Mansion", //51
-    "Byram–Middleton_House", //52
+    "Wheeler–Stokely_Mansion", //51
+    "Ransom_Place_Historic_District", //52
     "Riverside_Park_(Indianapolis)", //53
     "Garfield_Park_(Indianapolis)", //54
     "Golden_Hill_Historic_District_(Indianapolis,_Indiana)", //55
-    "Big_Run_Baptist_Church_and_Cemetery", //56
+    "Indianapolis_Public_Library", //56
     "Balmoral_Court", //57
     "August_Sommer_House", //58
     "Herron–Morton_Place_Historic_District", //59
@@ -109,7 +109,13 @@ let locations = [
     "Crows_Nest,_Indiana", //61
     "Indiana_State_Federation_of_Colored_Women%27s_Clubs", //62
     "Indianapolis_Athletic_Club", //63
-    "Roberts_Park_Methodist_Episcopal_Church" //64
+    "Roberts_Park_Methodist_Episcopal_Church", //64
+    "Allison_Mansion", //65
+    "Central_State_Hospital_(Indiana)", //66
+    "Old_National_Centre", //67
+    "Christ_Church_Cathedral_(Indianapolis)", //68
+    "Louis_Levey_Mansion", //69
+    "The_Mayleeno" //70
 
 ]
 

@@ -70,7 +70,7 @@ let foldername = [
     "general-german-protestant-orphans-home", //11
     "hannah-house", //12
     "hilbert-circle-theatre", //13
-    "hiram-a-haverstick-farmstead", //14
+    "barnes-and-thornburg-building", //14
     "hotel-washington", //15
     "indiana-historical-society", //16
     "indiana-medical-history-museum", //17
@@ -89,7 +89,7 @@ let foldername = [
     "mass-ave", //30
     "morris-butler-house", //31
     "newfields", //32
-    "nicholson-rand-house", //33
+    "indianapolis-veterans-administration-hospital", //33
     "old-indianapolis-city-hall", //34
     "old-northside", //35
     "omni-severan-hotel", //36
@@ -108,12 +108,12 @@ let foldername = [
     "charles-kuhn-house", //49
     "shortridge-high-school", //50
     "st-john-the-evangelist-catholic-church", //51
-    "allison-mansion", //52
-    "byram-middleton-house", //53
+    "wheeler-stokely-mansion", //52
+    "ransom-place-historic-district", //53
     "riverside-park", //54
     "garfield-park", //55
     "golden-hill-historic-district", //56
-    "big-run-baptist-church-and-cemetery", //57
+    "indianapolis-public-library", //57
     "balmoral-court", //58
     "august-sommer-house", //59
     "herron-morton-place-historic-district", //60
@@ -121,7 +121,13 @@ let foldername = [
     "crows-nest", //62
     "indiana-womens-club", //63
     "indianapolis-athletic-club", //64
-    "roberts-park-church" //65
+    "roberts-park-church", //65
+    "allison-mansion", //66
+    "central-state-hospital", //67
+    "murat-theatre-at-old-national-centre", //68
+    "christ-church-cathedral", //69
+    "louis-levey-mansion", //70
+    "the-mayleeno" //71
 ]
 
 function loadImages(name) {
