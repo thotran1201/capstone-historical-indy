@@ -1,3 +1,7 @@
+body {
+    background-color: #EFEFEF;
+}
+
 .container {
     max-width: 100%;
     display: block;
@@ -34,3 +38,19 @@
     margin-top: 125px;
 }
 
+.title-underline {
+    width: 11%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.post-image img {
+    width: 350px;
+    height: 350px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: #D59F0F;
+}

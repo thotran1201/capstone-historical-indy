@@ -714,7 +714,7 @@ input[type=text] {
 }
 
 .questionstemplate {
-    background-color: royalblue;
+    background-color: #f8f8ff;
     margin-bottom: 55px;
     display: flex;
     flex-flow: row nowrap;

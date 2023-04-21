@@ -1,4 +1,54 @@
+.post {
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    text-align: left;
+}
 
+.post-image img {
+    width: 350px;
+    height: 350px;
+}
+
+.title {
+    font-family: RubikBold;
+    color: #002C5F;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.post-paragraph {
+    font-family: RubikReg;
+    color: #939393;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.read-link p {
+    margin-bottom: 55px;
+    color: #002C5F;
+}
+
+.read-link p:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.next-page-button a:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.back-page-button a:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.title-explore-underline {
+    width: 26%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
 
 .next-buttons-section {
     display: flex;

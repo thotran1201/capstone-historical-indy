@@ -179,10 +179,9 @@ p {
     font-family: RubikBold;
 }
 
-.title-underline {
-    width: 11%;
-    border-bottom: #002C5F 3px solid;
-    margin: 0 auto;
+.featured-post-history-title {
+    font-family: RubikBold;
+    margin-top: 105px;
 }
 
 .featured-post {
@@ -193,83 +192,34 @@ p {
     margin-top: 120px;
 }
 
-.post {
-    width: 350px;
-    height: 550px;
-    background-color: white;
-    text-align: left;
-}
-
-.title {
-    font-family: RubikBold;
-    color: #002C5F;
-    font-size: 20px;
-    padding: 5px;
-}
-
-.post-paragraph {
-    font-family: RubikReg;
-    color: #939393;
-    font-size: 13px;
-    padding: 5px;
-}
-
 .row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
-.title-about-underline {
-    width: 8%;
+.title-historical-underline {
+    width: 29%;
     border-bottom: #002C5F 3px solid;
     margin: 0 auto;
 }
 
-.about-paragraph {
-    margin-top: 44px;
+.featured-map-title {
+    font-family: RubikBold;
+    margin-top: 700px;
 }
 
-.about-paragraph p {
-    font-family: RubikReg;
-    line-height: 55px;
-}
-
-.title-explore-underline {
-    width: 26%;
+.title-map-underline {
+    width: 30%;
     border-bottom: #002C5F 3px solid;
     margin: 0 auto;
-}
-
-.next-buttons-section {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.back-page-button a {
-    color: white;
-    font-family: RubikReg;
-    font-size: 27px;
-    text-decoration: none;
-}
-
-.next-page-button a {
-    color: white;
-    font-family: RubikReg;
-    font-size: 27px;
-    text-decoration: none;
 }
 
 .historical-location-paragraph {
     margin-top: 90px;
 }
 
-.read-link p {
-    margin-bottom: 55px;
-    color: #002C5F;
+.fact-paragraph {
+    font-size: 66px;
 }
 
-.read-link p:hover {
-    color: gold;
-    cursor: pointer;
-}

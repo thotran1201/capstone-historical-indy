@@ -117,7 +117,7 @@ let foldername = [
     "balmoral-court", //58
     "august-sommer-house", //59
     "herron-morton-place-historic-district", //60
-    "old-southport-high-school", //61
+    "mccormick-cabin-site", //61
     "crows-nest", //62
     "indiana-womens-club", //63
     "indianapolis-athletic-club", //64
@@ -125,7 +125,7 @@ let foldername = [
     "allison-mansion", //66
     "central-state-hospital", //67
     "murat-theatre-at-old-national-centre", //68
-    "christ-church-cathedral", //69
+    "arsenal-technical-high-school", //69
     "louis-levey-mansion", //70
     "the-mayleeno" //71
 ]

@@ -105,7 +105,7 @@ let locations = [
     "Balmoral_Court", //57
     "August_Sommer_House", //58
     "Herron–Morton_Place_Historic_District", //59
-    "Old_Southport_High_School", //60
+    "McCormick_Cabin_Site", //60
     "Crows_Nest,_Indiana", //61
     "Indiana_State_Federation_of_Colored_Women%27s_Clubs", //62
     "Indianapolis_Athletic_Club", //63
@@ -113,7 +113,7 @@ let locations = [
     "Allison_Mansion", //65
     "Central_State_Hospital_(Indiana)", //66
     "Old_National_Centre", //67
-    "Christ_Church_Cathedral_(Indianapolis)", //68
+    "Arsenal_Technical_High_School", //68
     "Louis_Levey_Mansion", //69
     "The_Mayleeno" //70
 
