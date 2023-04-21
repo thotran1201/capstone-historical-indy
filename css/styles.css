@@ -1,0 +1,749 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html, body {
+ height: 100%
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+ margin-bottom: 16px
+}
+
+@font-face {
+    font-family: RubikBlack;
+    src: url(../fonts/Rubik-Black.ttf);
+}
+
+@font-face {
+    font-family: RubikBlackIt;
+    src: url(../fonts/Rubik-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikBold;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: RubikBoldIt;
+    src: url(../fonts/Rubik-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikExtraBold;
+    src: url(../fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: RubikExtraBoldItalic;
+    src: url(../fonts/Rubik-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikItalic;
+    src: url(../fonts/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: RubikLight;
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: RubikLightIt;
+    src: url(../fonts/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikMedium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: RubikMediumItalic;
+    src: url(../fonts/Rubik-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikReg;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: RubikSemiBo;
+    src: url(../fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: RubikSemiBoldIt;
+    src: url(../fonts/Rubik-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishBlack;
+    src: url(../fonts/Mulish-Black.ttf);
+}
+
+@font-face {
+    font-family: MulishBlackIt;
+    src: url(../fonts/Mulish-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishBold;
+    src: url(../fonts/Mulish-Bold.ttf);
+}
+
+@font-face {
+    font-family: MulishBoldIt;
+    src: url(../fonts/Mulish-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraBold;
+    src: url(../fonts/Mulish-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraBoldIt;
+    src: url(../fonts/Mulish-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraLight;
+    src: url(../fonts/Mulish-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: MulishExtraLightIt;
+    src: url(../fonts/Mulish-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishIt;
+    src: url(../fonts/Mulish-Italic.ttf);
+}
+
+@font-face {
+    font-family: MulishLi;
+    src: url(../fonts/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: MulishLightIt;
+    src: url(../fonts/Mulish-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishMedium;
+    src: url(../fonts/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: MulishMediumIt;
+    src: url(../fonts/Mulish-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: MulishRegular;
+    src: url(../fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: MulishSemiBo;
+    src: url(../fonts/Mulish-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MulishSemiBoldIt;
+    src: url(../fonts/Mulish-SemiBoldItalic.ttf);
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #002C5F;
+    height: 110px;
+}
+
+nav a {
+    font-size: 25px;
+    font-family: RubikReg;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #D59F0F;
+}
+
+.container {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.0em 5.0em;
+    background-color: #EFEFEF;
+}
+
+.search-section {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 17px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon-section {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.search-icon-section img {
+    width: 29px;
+    height: 29px;
+    margin-left: 6px;
+    padding-top: 5px;
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 100%;
+}
+
+.searchbar {
+    height: 42px;
+}
+
+.searchbar-rectangle {
+    background-color: #729DCF;
+    width: 1520px;
+    height: 75px;
+}
+
+.search-icon-rectangle {
+    width: 994px;
+    height: 40px;
+    background-color: white;
+    border-color: #002C5F;
+}
+
+.hero-section {
+    background-image: url("../images/indy-history.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.home-body-section h2 {
+    color: #729DCF;
+    font-family: RubikReg;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.home-body-section img {
+    width: 803px;
+    margin: 0 auto;
+}
+
+.featured-post-title {
+    font-family: RubikBold;
+}
+
+.featured-post-history-title {
+    font-family: RubikBold;
+    margin-top: 105px;
+}
+
+.title-underline {
+    width: 11%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.featured-post {
+    margin-top: 44px;
+}
+
+.featured-post-two {
+    margin-top: 120px;
+}
+
+.post-image img {
+    width: 350px;
+    height: 350px;
+}
+
+.post {
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    text-align: left;
+}
+
+.title {
+    font-family: RubikBold;
+    color: #002C5F;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.post-paragraph {
+    font-family: RubikReg;
+    color: #939393;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.read-link p {
+    margin-bottom: 55px;
+    color: #002C5F;
+}
+
+.read-link p:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.next-page-button a:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.back-page-button a:hover {
+    color: #D59F0F;
+    cursor: pointer;
+}
+
+.hero-about-section {
+    background-image: url("../images/1960s\ racing.png");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.title-about-underline {
+    width: 8%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.about-paragraph {
+    margin-top: 44px;
+}
+
+.about-paragraph p {
+    font-family: RubikReg;
+    line-height: 55px;
+}
+
+.history-paragraph {
+    margin-top: 44px;
+}
+
+.history-paragraph p {
+    font-family: RubikReg;
+    line-height: 55px;
+}
+
+.hero-explore-section {
+    background-image: url("../images/greenway.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-two-section {
+    background-image: url("../images/ball-gardens.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-three-section {
+    background-image: url("../images/old_statehouse_pics_033_72dpi_3750P_sepia.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-four-section {
+    background-image: url("../images/Indianapolis-500-1911-race-2.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-five-section {
+    background-image: url("../images/lincoln-funeral-car-loc.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-six-section {
+    background-image: url("../images/al-greens.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-seven-section {
+    background-image: url("../images/Bicentennial-Photo.webp");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-eight-section {
+    background-image: url("../images/Circle_Park_Before_Construction_of_the_Soldiers_and_Sailors_Monument-880x700.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-nine-section {
+    background-image: url("../images/protest-indianapolis.avif");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-ten-section {
+    background-image: url("../images/Graphic_scene_of_Indianapolis_in_1820_cabin_in_the_woods_Bass_-880x440.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-eleven-section {
+    background-image: url("../images/black-history-month-indiana-avenue_47184b078aa3b687f5f608d9ac7af3e4.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.hero-explore-twelve-section {
+    background-image: url("../images/Interior-of-Glendale.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+#hero-facts-image {
+    background-image: url("../images/b6fa886e-f5e1-4314-b2bd-b456886ecf36-VICTORY_FIELD_AERIAL_KW.webp");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.title-explore-underline {
+    width: 26%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.title-historical-underline {
+    width: 29%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+.featured-map-title {
+    font-family: RubikBold;
+    margin-top: 700px;
+}
+
+.title-map-underline {
+    width: 30%;
+    border-bottom: #002C5F 3px solid;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery-container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a #002C5F background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: #002C5F;
+    color: #D59F0F;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #002C5F;
+    padding: 2px 16px;
+    color: #D59F0F;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.gallery-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.gallery-row img {
+    width: 210px;
+}
+
+.featured-gallery-title {
+    font-family: RubikBold;
+    margin-top: 700px;
+}
+
+.historical-location-paragraph {
+    margin-top: 90px;
+}
+
+.fact-paragraph {
+    font-size: 66px;
+}
+
+.next-buttons-section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.back-page-button {
+    background-color: #002C5F;
+    height: 70px;
+    width: 306px;
+    padding-top: 18px;
+    margin-top: 125px;
+}
+
+.back-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.next-page-button {
+    background-color: #002C5F;
+    height: 70px;
+    width: 306px;
+    margin-left: 975px;
+    padding-top: 18px;
+    margin-top: 125px;
+}
+
+.next-page-button a {
+    color: white;
+    font-family: RubikReg;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.hero-questions-section {
+    background-image: url("../images/34th-St.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.enter-your-question-section {
+    margin-top: 55px;
+}
+
+.enter-your-question-title {
+    font-family: RubikBold;
+}
+
+.questions-list-section {
+    margin-top: 155px;
+}
+
+.questions-list-title {
+    font-family: RubikBold;
+}
+
+.questionstemplate {
+    background-color: #f8f8ff;
+    margin-bottom: 55px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.questionstemplate img {
+    height: 50px;
+    width: 50px;
+}
+
+.copyright {
+    background-color: #002C5F;
+    width: 1536px;
+    height: 45px;
+    margin-top: 490px;
+}
+
+.copyright p {
+    color: white;
+    font-family: MulishRegular;
+    font-size: 15px;
+    margin-left: 580px;
+    padding-top: 12px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: #D59F0F;
+}
