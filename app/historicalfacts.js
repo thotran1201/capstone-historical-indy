@@ -119,7 +119,7 @@ let foldername = [
     "herron-morton-place-historic-district", //60
     "mccormick-cabin-site", //61
     "crows-nest", //62
-    "indiana-womens-club", //63
+    "christ-church-cathedral", //63
     "indianapolis-athletic-club", //64
     "roberts-park-church", //65
     "allison-mansion", //66

@@ -107,7 +107,7 @@ let locations = [
     "Herron–Morton_Place_Historic_District", //59
     "McCormick_Cabin_Site", //60
     "Crows_Nest,_Indiana", //61
-    "Indiana_State_Federation_of_Colored_Women%27s_Clubs", //62
+    "Christ_Church_Cathedral_(Indianapolis)", //62
     "Indianapolis_Athletic_Club", //63
     "Roberts_Park_Methodist_Episcopal_Church", //64
     "Allison_Mansion", //65
